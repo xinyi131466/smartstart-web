@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SmartStarter - Feedback</title>
+  <!-- 引入 Google Fonts 设计感字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 全局标题 -->
+  <div class="global-title">SmartStarter</div>
+  <!-- Feedback Page -->
+  <div id="feedback" class="centered top-centered">
+    <div class="main-content">
+      <div class="search-suggestion-box">
+        <!-- 任务进度标题 -->
+        <div class="progress-title">Task Progress</div>
+        <div class="progress-circle">
+          <svg id="progressSvg" width="120" height="120">
+            <circle stroke="#eee" fill="none" cx="60" cy="60" r="50" stroke-width="10"/>
+            <circle id="progressBar" stroke="#222" fill="none" cx="60" cy="60" r="50" stroke-width="10"
+              stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="125"/>
+            <text id="progressText" x="50%" y="50%" text-anchor="middle" dy="0.3em" font-size="1.5rem" fill="#222">60%</text>
+          </svg>
+        </div>
+        <div style="margin: 1rem 0; font-size: 1.2rem;">Did this suggestion help you?</div>
+        <div class="emoji-row">
+          <span class="emoji" data-feedback="good">😊</span>
+          <span class="emoji" data-feedback="ok">😐</span>
+          <span class="emoji" data-feedback="bad">😕</span>
+        </div>
+        <div id="thanks" style="font-size:1.1rem; color:#666; margin-top:1rem;"></div>
+      </div>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="feedback.js"></script>
+</body>
+</html> 

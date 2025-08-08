@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SmartStarter</title>
+  <!-- 引入 Google Fonts 设计感字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="home" class="centered top-centered">
+    <!-- 主要内容容器 -->
+    <div class="main-content">
+      <!-- 标题区域 -->
+      <div class="title-section">
+        <div class="global-title">SmartStarter</div>
+        <div class="subtitle">Break down your goals into actionable first steps</div>
+      </div>
+      
+      <!-- 搜索与建议整体圆角框 -->
+      <div class="search-suggestion-box">
+        <!-- 搜索输入行 -->
+        <div class="input-row input-row-inline">
+          <input id="taskInput" class="input" placeholder="Enter your task" />
+          <button id="searchBtn" class="button">Search</button>
+        </div>
+        <!-- 加载指示器 -->
+        <div id="loadingIndicator" class="loading-indicator hidden">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">AI is thinking...</div>
+        </div>
+        <!-- 建议标签及说明 -->
+        <div class="suggestion-tags-row">
+          <span class="suggestion-label">Try these examples:</span>
+          <div class="suggestion-tags">
+            <span class="tag">Fitness</span>
+            <span class="tag">Write a report</span>
+            <span class="tag">Learn a language</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+ 

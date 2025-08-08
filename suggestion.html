@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SmartStarter - Suggestions</title>
+  <!-- 引入 Google Fonts 设计感字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 全局标题 -->
+  <div class="global-title">SmartStarter</div>
+  <!-- Suggestions Page -->
+  <div id="suggestions" class="centered top-centered">
+    <div class="main-content">
+      <div class="search-suggestion-box">
+        <!-- 加载指示器 -->
+        <div id="loadingIndicator" class="loading-indicator hidden">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">AI is thinking...</div>
+        </div>
+        
+        <!-- 横向布局容器 -->
+        <div class="horizontal-layout">
+          <!-- 左侧：完整任务规划 -->
+          <div class="outline-section">
+            <h3 class="section-title">Complete Task Plan</h3>
+            <div class="outline-box" id="outlineBox"></div>
+          </div>
+          
+          <!-- 右侧：启动步骤 -->
+          <div class="steps-section">
+            <h3 class="section-title">Recommended Starting Steps</h3>
+            <div class="cards-row" id="firstStepCards"></div>
+            <!-- 换一批按钮 -->
+            <div class="refresh-section">
+              <button id="refreshBtn" class="refresh-button">🔄 Generate New Suggestions</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 操作按钮 -->
+        <div class="button-row hidden" id="suggestionBtns">
+          <button id="completeBtn" class="button">Complete</button>
+          <button id="stopBtn" class="button">That's all for today</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="suggestion.js"></script>
+</body>
+</html>
