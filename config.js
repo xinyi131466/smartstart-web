@@ -4,9 +4,9 @@ const config = {
   development: {
     apiUrl: 'http://localhost:3001/api/ai'
   },
-  // 生产环境 - 使用外部API服务
+  // 生产环境 - 使用 Vercel 部署的 API
   production: {
-    apiUrl: 'https://your-api-service.com/api/ai' // 需要替换为实际的API服务
+    apiUrl: '/api/ai' // 使用相对路径，指向 Vercel 部署的 API
   }
 };
 
