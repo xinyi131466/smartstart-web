@@ -17,7 +17,7 @@ async function callAIForSuggestions(task) {
   try {
     console.log('seeking AI suggestions...');
     
-    const response = await fetch(window.APP_CONFIG.apiUrl, {
+    const response = await fetch('http://localhost:3001/api/ai', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
