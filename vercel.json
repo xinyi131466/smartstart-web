@@ -4,6 +4,13 @@
     {
       "src": "proxy.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "."
+      }
     }
   ],
   "routes": [
@@ -12,8 +19,16 @@
       "dest": "/proxy.js"
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*\\.(css|js|html|png|jpg|jpeg|gif|svg|ico))",
       "dest": "/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
