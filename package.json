@@ -1,6 +1,6 @@
 {
   "name": "smartstarter-web",
-  "version": "1.0.0",
+  "version": "1.0.0", 
   "description": "AI-powered task breakdown web application",
   "main": "proxy.js",
   "scripts": {
@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "axios": "^1.10.0",
-    "cors": "^2.8.5",
+    "cors": "^2.8.5", 
     "express": "^5.1.0"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "18.x"
   }
 }
